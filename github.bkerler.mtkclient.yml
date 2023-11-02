@@ -17,10 +17,15 @@ modules:
   - name: mtkclient
     buildsystem: simple
     build-commands:
-      - install -Dm755 mtk_gui /app/bin/mtk_gui
       - cp -r mtkclient /app/bin/mtkclient
+      - install -Dm755 mtk_gui /app/bin/mtk_gui
+      - desktop-file-edit --set-key=Icon --set-value=github.bkerler.mtkclient github.bkerler.mtkclient.desktop
+      - install -Dm644 github.bkerler.mtkclient.desktop /app/share/applications/github.bkerler.mtkclient.desktop
 
     sources:
       - type: archive
         url: https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip
         sha256: 3e06d70066d148a43e905f25b3c5d711eb7f08eaa8b02c733359bf11ac91a438
+
+      - type: file
+        path: github.bkerler.mtkclient.desktop
