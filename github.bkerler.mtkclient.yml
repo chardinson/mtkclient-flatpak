@@ -1,0 +1,26 @@
+app-id: github.bkerler.mtkclient
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: mtk_gui
+
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --device=all
+
+modules:
+  - shared-modules/libusb/libusb.json
+  - requirements.json
+
+  - name: mtkclient
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 mtk_gui /app/bin/mtk_gui
+      - cp -r mtkclient /app/bin/mtkclient
+
+    sources:
+      - type: archive
+        url: https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip
+        sha256: 3e06d70066d148a43e905f25b3c5d711eb7f08eaa8b02c733359bf11ac91a438

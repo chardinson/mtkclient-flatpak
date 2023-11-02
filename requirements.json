@@ -1,0 +1,64 @@
+{
+  "name": "poetry-deps",
+  "buildsystem": "simple",
+  "build-commands": [
+    "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} wheel pyusb pycryptodome pycryptodomex colorama shiboken6 pyside6 mock pyserial"
+  ],
+  "sources": [
+    {
+      "type": "file",
+      "url": "https://files.pythonhosted.org/packages/fa/7f/4c07234086edbce4a0a446209dc0cb08a19bb206a3ea53b2f56a403f983b/wheel-0.41.3-py3-none-any.whl",
+      "sha256": "488609bc63a29322326e05560731bf7bfea8e48ad646e1f5e40d366607de0942"
+    },
+    {
+      "type": "file",
+      "url": "https://files.pythonhosted.org/packages/15/a8/4982498b2ab44d1fcd5c49f07ea3795eab01601dc143b009d333fcace3b9/pyusb-1.2.1-py3-none-any.whl",
+      "sha256": "2b4c7cb86dbadf044dfb9d3a4ff69fd217013dbe78a792177a3feb172449ea36"
+    },
+    {
+      "type": "file",
+      "url": "https://files.pythonhosted.org/packages/00/e6/73931df4046e34a6354d323b4a5b5c18e5184f4a08687806ee3353c81a6b/pycryptodome-3.19.0-cp35-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "e249a784cc98a29c77cea9df54284a44b40cafbfae57636dd2f8775b48af2434"
+    },
+    {
+      "type": "file",
+      "url": "https://files.pythonhosted.org/packages/23/23/3f3d042c96ff7bece5b126365593b1f9c8e3ae62ce80d44e9da39c5e8a73/pycryptodomex-3.19.0-cp35-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "c74eb1f73f788facece7979ce91594dc177e1a9b5d5e3e64697dd58299e5cb4d"
+    },
+    {
+      "type": "file",
+      "url": "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"
+    },
+    {
+      "type": "file",
+      "url": "https://files.pythonhosted.org/packages/6b/eb/72572b8db7713305b6a15ea7aa04bd7240cd9d84c33cc790218532fc0f43/shiboken6-6.6.0-cp38-abi3-manylinux_2_28_x86_64.whl",
+      "sha256": "456b89fb4b323e0c5002d92e4d346b48bb4e709db801208df8a0d6b4f5efc33d"
+    },
+    {
+      "type": "file",
+      "url": "https://files.pythonhosted.org/packages/14/cd/f8117f92430564af4cb60bc38d93de8dcb1d051c955cf0a62e6563fe7f55/PySide6-6.6.0-cp38-abi3-manylinux_2_28_x86_64.whl",
+      "sha256": "d487eab0f9bfc5c9141b474093e16207ff48cd9335e6465a01deb8dff0693fbc"
+    },
+    {
+      "type": "file",
+      "url": "https://files.pythonhosted.org/packages/6b/20/471f41173930550f279ccb65596a5ac19b9ac974a8d93679bcd3e0c31498/mock-5.1.0-py3-none-any.whl",
+      "sha256": "18c694e5ae8a208cdb3d2c20a993ca1a7b0efa258c247a1e565150f477f83744"
+    },
+    {
+      "type": "file",
+      "url": "https://files.pythonhosted.org/packages/07/bc/587a445451b253b285629263eb51c2d8e9bcea4fc97826266d186f96f558/pyserial-3.5-py2.py3-none-any.whl",
+      "sha256": "c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0"
+    },
+    {
+      "type": "file",
+      "url": "https://files.pythonhosted.org/packages/e2/f0/09e8e38a51f705eecda1202cb51a9fcc7affb0f9fd3be44bf58ce25528dc/PySide6_Essentials-6.6.0-cp38-abi3-manylinux_2_28_x86_64.whl",
+      "sha256": "60284641619f964e1cb4d53cf3169d7a385e0378b74edb75610918d2aea1c4e5"
+    },
+    {
+      "type": "file",
+      "url": "https://files.pythonhosted.org/packages/d9/37/94576a9a1c4070652d508e277642e896693d49d83fc329949c13de19cef5/PySide6_Addons-6.6.0-cp38-abi3-manylinux_2_28_x86_64.whl",
+      "sha256": "5c56e963b841aeaacbc9ca8ca34df45308818dbd6fc59faa2b5a00a299e9892b"
+    }
+  ]
+}
